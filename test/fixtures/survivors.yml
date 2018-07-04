@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gender: MyString
+  age: 1
+  longitude: MyString
+  latitude: MyString
+  is_infected: 
+  count_reports: 1
+
+two:
+  name: MyString
+  gender: MyString
+  age: 1
+  longitude: MyString
+  latitude: MyString
+  is_infected: 
+  count_reports: 1
