@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project implements a REST API ZSSN (Zombie Survival Social Network). The following methods are implemented:
 
-Things you may want to cover:
+* Add survivors to the database
 
-* Ruby version
+A survivor have a name, age, gender and last location (latitude, longitude). A survivor also has an inventory of resources of their own property.
 
-* System dependencies
+* Update survivor location
 
-* Configuration
+A survivor have the ability to update their last location, storing the new latitude/longitude pair in the base.
 
-* Database creation
+* Flag survivor as infected
 
-* Database initialization
+A survivor may get contaminated by the virus. When this happens, we chenge the flag the survivor as infected.
 
-* How to run the test suite
+Survivors's items from inventory
 
-* Services (job queues, cache servers, search engines, etc.)
+the survivor have some items in your inventory, like water, food and others
 
-* Deployment instructions
+* Reports
 
-* ...
+Some reports exists like check the percentage of infected survivors, percentage of non-infected survivors and the average of resources per survivor. 
+
