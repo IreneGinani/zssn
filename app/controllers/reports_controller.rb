@@ -5,5 +5,11 @@ class ReportsController < ApplicationController
                 percentage: Survivor.avg_infected
         }
     end
+    def average_no_infected
+        render json: {
+                description: "Average of no infected people",
+                percentage: Survivor.avg_no_infected
+        }
+    end
 
 end

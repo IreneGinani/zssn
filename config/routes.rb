@@ -8,6 +8,7 @@ Rails.application.routes.draw do
         end
       scope 'reports' do
         get 'average_infected' => 'reports#average_infected'
+        get 'average_no_infected' => 'reports#average_no_infected'
       end
     end
   end

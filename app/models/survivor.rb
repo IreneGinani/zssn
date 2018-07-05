@@ -16,4 +16,8 @@ class Survivor < ApplicationRecord
 
     end
 
+    def self.avg_no_infected
+        (no_infected.count.to_f / all_.count.to_f)*100
+    end
+
 end
