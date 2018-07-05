@@ -20,4 +20,13 @@ class Survivor < ApplicationRecord
         (no_infected.count.to_f / all_.count.to_f)*100
     end
 
+    def self.item_person(id)
+
+        item_in_inventory(id) / all_.count.to_f
+
+    end
+
+    def self.item_in_inventory(id)
+        InventoryItem.where(item_id: id).count
+    end
 end
