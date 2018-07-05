@@ -7,7 +7,7 @@ class CreateSurvivors < ActiveRecord::Migration[5.2]
       t.string :longitude
       t.string :latitude
       t.boolean :is_infected
-      t.integer :count_reports
+      t.integer :count_reports, default: 0
 
       t.timestamps
     end

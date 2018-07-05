@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2018_07_04_133138) do
     t.string "longitude"
     t.string "latitude"
     t.boolean "is_infected"
-    t.integer "count_reports"
+    t.integer "count_reports", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
