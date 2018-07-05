@@ -6,6 +6,11 @@ Rails.application.routes.draw do
           put ':id/report' => 'survivors#report'
           end
         end
+      scope 'reports' do
+        get 'average_infected' => 'reports#average_infected'
+      end
     end
   end
 end
+
+
